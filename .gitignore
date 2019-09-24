@@ -6,3 +6,6 @@ yarn-error.log
 
 # npm
 package-lock.json
+
+# test
+my-project
