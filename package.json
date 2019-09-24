@@ -1,0 +1,24 @@
+{
+  "name": "project-init",
+  "version": "0.1.0",
+  "description": "project init cli",
+  "repository": "git@github.com:nekronhuang/project-init.git",
+  "author": "nekronhuang <nekron.hyt@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "bin": "./index.js",
+  "engines": {
+    "node": ">=8"
+  },
+  "files": [
+    "index.js"
+  ],
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "commander": "^3.0.1",
+    "fs-extra": "^8.1.0",
+    "inquirer": "^7.0.0",
+    "lodash": "^4.17.15",
+    "semver": "^6.3.0"
+  }
+}
