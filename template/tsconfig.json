@@ -11,7 +11,7 @@
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
     "pretty": true,
-    "lib": ["dom", "es7"],
+    "lib": ["dom", "esnext"],
     "skipLibCheck": true
   },
   "include": ["src/**/*"],
