@@ -11,10 +11,12 @@
   "scripts": {
     "build": "tsc",
     "clean": "rm -rf lib",
+    "lint": "lint-staged",
     "prepublishOnly": "npm run clean && npm run build"
   },
   "dependencies": {},
   "devDependencies": {
+    "@commitlint/cli": "^8.2.0",
     "@typescript-eslint/eslint-plugin": "^2.3.1",
     "@typescript-eslint/parser": "^2.3.1",
     "eslint": "^6.4.0",
@@ -23,14 +25,11 @@
     "husky": "^3.0.5",
     "lint-staged": "^9.3.0",
     "prettier": "^1.18.2",
-    "typescript": "^3.6.3",
-    "webpack": "^4.40.2",
-    "webpack-cli": "^3.3.9",
-    "webpack-merge": "^4.2.2"
+    "typescript": "^3.6.3"
   },
   "lint-staged": {
     "*.{ts,tsx}": [
-      "tslint -c tslint.json",
+      "eslint",
       "prettier --write",
       "git add"
     ]
